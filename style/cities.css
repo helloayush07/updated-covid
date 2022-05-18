@@ -1,0 +1,51 @@
+.tile-container{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tile{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 16px;
+
+    background: rgb(33, 150, 243);
+
+    box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 2px 1px -1px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+}
+
+.tile:hover{
+     transform: scale(1.1);
+}
+
+.tile a{
+    text-decoration: none;
+    color:white;
+}
+
+#footerCities {
+   position: absolute;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   display: block;
+}
+
+@media screen and (max-width: 540px) {
+    #footerCities {
+        position: relative;
+    }
+}
